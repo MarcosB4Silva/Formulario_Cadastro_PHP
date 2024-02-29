@@ -1,0 +1,66 @@
+:root {
+    --cor-fundo: #152546;
+    --cor-destaque: #d086f3;
+    --cor-secundaria: #fff;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: linear-gradient(to right, var(--cor-destaque), var(--cor-fundo));
+}
+.box {
+    color: var(--cor-secundaria);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-fundo);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    box-shadow: 5px 5px 10px var(--cor-fundo);
+    text-align: center;
+}
+form{
+    text-align: center;
+    padding: 20px;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--cor-destaque);
+    outline: none;
+    color: var(--cor-secundaria);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -20px;
+    font-size: 13px;
+    color: var(--cor-destaque);
+    letter-spacing: 2px;
+}
+
+.btn {
+    background-color:   #d086f36e;
+    padding: 10px 25px;
+    border: 2px solid var(--cor-destaque);
+    color: var(--cor-secundaria);
+    font-weight: bolder;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
