@@ -15,7 +15,6 @@
             <input type="password" name="senha" placeholder="Senha" class="inputUser">
             <br><br>
             <input type="submit" name="submit" value="Enviar" class="btn">
-            <br><br>
         </form>
     </div>
 </body>
