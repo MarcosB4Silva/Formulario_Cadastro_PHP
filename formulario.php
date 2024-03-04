@@ -37,6 +37,8 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($conexao,"INSERT INTO fomulario_cadastro(nome_Completo, email, senha, telefone, genero, data_nasc, endereco, cidade, estado)
     VALUES('$nomecompleto','$email', '$senha', $telefone, '$genero', '$data_nascimento', '$endereco', '$cidade', '$estado')"
     );
+    
+    header('Location: login.php');
 }
 ?>
 

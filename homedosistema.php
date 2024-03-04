@@ -37,5 +37,8 @@ else
         </div>
     </nav>
     <h1>Você acessou o sistema</h1>
+<?php
+    echo "<h1>Boas Vindas <u> $logado <u></h1>";
+?>
 </body>
 </html>
